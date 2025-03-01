@@ -37,14 +37,49 @@
 // =================================================================
 // HOISTING
 
-//hoisting with var
+//-----hoisting with var
 
 // console.log(x);  => undefined
 // var x = 5; => inicijalizovano
 // console.log(x); => 5
 
-// hoisting with let and const
+//------hoisting with let and const
 
 // console.log(y); // ReferenceError: Cannot access 'y' before initialization
 // let y = 10;
 // console.log(y); // 10
+
+//-------hoisting with classic function
+
+// pozdrav(); // "Zdravo!"
+
+// function pozdrav() {
+//     console.log("Zdravo!");
+// }
+
+// ======== hoisting with function expression
+
+// pozdrav(); // TypeError: pozdrav is not a function
+
+// var pozdrav = function() {
+//     console.log("Zdravo!");
+// };
+
+// ======== redosled hoistinga
+//  prvo idu funkcije pa onda varijable, ako imaju isti naziv npr ponovo prednost imaju funkcije
+// console.log(typeof mojaFunkcija); // "function"
+
+// var mojaFunkcija = 5;
+
+// function mojaFunkcija() {
+//     console.log("Ovo je funkcija!");
+// }
+
+// console.log(typeof mojaFunkcija); // "number"
+
+// Hoisting u blokovskim opsezima (let i const su fazon taj blokovski opsezi)
+
+// if (true) {
+//     console.log(x); // ReferenceError: Cannot access 'x' before initialization
+//     let x = 10;
+// }
