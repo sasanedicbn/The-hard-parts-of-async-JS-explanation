@@ -84,7 +84,7 @@
 //     let x = 10;
 // }
 
-// DEEP AND SHALLOW COPY
+// ======================= DEEP AND SHALLOW COPY
 
 // PRIMITIVE TYPES => STRING, BOOLEEAN, NUMBER, SYMBOLS, NULL, UNDEFINED,
 // SLOZENI TIPOVI => ARRAY, OBJECT, FN
@@ -110,3 +110,55 @@
 // copied.b.c = 150;
 // console.log("original", original);
 // console.log("copied", copied);
+
+// =========================== Difference between (let, const i var)
+// VAR
+// function checkVar() {
+//   if (true) {
+//     var x = 10;
+//   }
+//   console.log(x, "var");
+// }
+
+// checkVar();
+// // -Funckionalni scope dostupna unutar funkcije
+
+// console.log(x) => undefined
+// var x = 10;
+// cl(x) => 10
+
+// Hoisting deklaracija se dize na vrh scope a inicijalizacija se desava clasicno
+
+// var num = 10
+// var num = 20
+// console.log(20) => dozvoljava deklarisanje unutar istog opsega
+
+// LET
+
+// //function example() {
+//     if (true) {
+//         let x = 10;
+//         console.log(x); // 10
+//     }
+//     console.log(x); // ReferenceError: x is not defined (x nije dostupan van if bloka)
+// }
+// example();
+
+// LET IMA BLOK SCOPE
+
+// console.log(y); // ReferenceError: Cannot access 'y' before initialization
+// let y = 5;
+// console.log(y); // 5
+
+// let promenljive su takođe hoistovane, ali nisu inicijalizovane dok se ne dođe do linije gde su deklarisane.
+
+// let z = 10;
+// let z = 20; // SyntaxError: Identifier 'z' has already been declared
+// ne mozes ponovo deklarisati unutar istog scopa.
+
+// CONST
+
+//CONST IMA ISTO BLOK SCOPE KAO I LET
+//HOISTING ISTO KOA I LET
+//const promenljive ne mogu biti ponovo dodeljene (ne mogu im se menjati vrednosti). Međutim,
+// ako je const promenljiva objekat ili niz, njegovi unutrašnji elementi mogu biti promenjeni.
