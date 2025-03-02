@@ -87,7 +87,7 @@
 // DEEP AND SHALLOW COPY
 
 // PRIMITIVE TYPES => STRING, BOOLEEAN, NUMBER, SYMBOLS, NULL, UNDEFINED,
-// SLOZENI TIPOVI => ARRAY, OBJECT
+// SLOZENI TIPOVI => ARRAY, OBJECT, FN
 
 // let a = 5;
 // let b = a; //5
@@ -97,12 +97,16 @@
 // let orange = isChecked;
 // orange = false;
 
-const user = {
-  name: "Sasa",
-  country: "SRB",
-};
-const user2 = { ...user };
-user2.name = "Radovan";
+// const user = {
+//   name: "Sasa",
+//   country: "SRB",
+// };
+// const user2 = { ...user };
+// user2.name = "Radovan";
 
-console.log("user", user);
-console.log("user2", user2);
+// let original = { a: 1, b: { c: 2 }, d: [3, 4] };
+// let copied = structuredClone(original);
+
+// copied.b.c = 150;
+// console.log("original", original);
+// console.log("copied", copied);
