@@ -162,3 +162,28 @@
 //HOISTING ISTO KOA I LET
 //const promenljive ne mogu biti ponovo dodeljene (ne mogu im se menjati vrednosti). Međutim,
 // ako je const promenljiva objekat ili niz, njegovi unutrašnji elementi mogu biti promenjeni.
+
+// ========================= JavaScript Object Prototype
+
+// const obj = {
+//   name: "Sasa",
+// };
+// console.log(obj);
+
+// ====================== JS MODULES
+
+// -Moduli omogućavaju organizovanje koda u zasebne fajlove.
+// -export se koristi za izvoz vrednosti, funkcija ili objekata.
+// -import se koristi za uvoz iz drugih modula.
+// -Postoje named export i default export.
+// -Moduli imaju svoj opseg (scope) i ne zagaduju globalni opseg.
+// -Dinamički uvoz omogućava učitavanje modula po potrebi
+
+// math.js
+
+// const calc = () => 2+2
+// export default calc => default export
+// export const calc2 = () => 3+3  -Named export
+
+// export
+// import calc, {calc2} from 'math.js'
