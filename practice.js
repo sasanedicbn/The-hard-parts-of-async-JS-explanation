@@ -83,3 +83,18 @@
 //     console.log(x); // ReferenceError: Cannot access 'x' before initialization
 //     let x = 10;
 // }
+
+// DEEP AND SHALLOW COPY
+
+// PRIMITIVE TYPES => STRING, BOOLEEAN, NUMBER, SYMBOLS, NULL, UNDEFINED,
+// SLOZENI TIPOVI => ARRAY, OBJECT
+
+let a = 5;
+let b = a; //5
+b = 10;
+
+let isChecked = true;
+let orange = isChecked;
+orange = false;
+console.log("isChekced", isChecked);
+console.log("orange", orange);
