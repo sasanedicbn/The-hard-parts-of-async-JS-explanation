@@ -89,12 +89,20 @@
 // PRIMITIVE TYPES => STRING, BOOLEEAN, NUMBER, SYMBOLS, NULL, UNDEFINED,
 // SLOZENI TIPOVI => ARRAY, OBJECT
 
-let a = 5;
-let b = a; //5
-b = 10;
+// let a = 5;
+// let b = a; //5
+// b = 10;
 
-let isChecked = true;
-let orange = isChecked;
-orange = false;
-console.log("isChekced", isChecked);
-console.log("orange", orange);
+// let isChecked = true;
+// let orange = isChecked;
+// orange = false;
+
+const user = {
+  name: "Sasa",
+  country: "SRB",
+};
+const user2 = { ...user };
+user2.name = "Radovan";
+
+console.log("user", user);
+console.log("user2", user2);
