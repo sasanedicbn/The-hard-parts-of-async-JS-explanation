@@ -4,7 +4,7 @@ function calculateNumbers(a, b) {
   return a + b;
 }
 calculateNumbers(10, 5);
-
+export default calculateNumbers;
 // 1* The code is executed line by line (in a single thread) from top to bottom.
 // 2* When the thread encounters the function `calculateNumbers`, it stores the function definition in global memory (just the function definition).
 // 3* After that, the single thread moves to the next line and encounters `calculateNumbers(10, 5)`.

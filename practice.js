@@ -187,3 +187,31 @@
 
 // export
 // import calc, {calc2} from 'math.js'
+
+// ==================== Arrow function
+
+// Arrow funcija nema arguments
+// Arrow fn ima kracu sintaksu
+//Arrow funkcije nemaju svoj this kontekst => uzima this is svog opsega
+// function Timer() {
+//   //   this.seconds = 0;
+
+//   // Regularna funkcija
+//   setInterval(function () {
+//     let seconds = 0;
+//     this.seconds++; // this nije Timer objekat!
+//     console.log(this.seconds); // NaN
+//   }, 1000);
+
+// Arrow funkcija
+//   setInterval(() => {
+//     this.seconds++; // this je Timer objekat!
+//     console.log(this.seconds); // 1, 2, 3, ...
+//   }, 1000);
+// }
+
+// Regularna funkcija(this)
+// Pozvana globalno? ➝ this je window (ili undefined u strict mode).
+// Pozvana kao metoda objekta? ➝ this je taj objekat.
+// Pozvana sa new? ➝ this je novi objekat.
+// Callback funkcija (setTimeout, event listener)? ➝ Zavisno od toga kako je pozvana.
