@@ -215,3 +215,12 @@
 // Pozvana kao metoda objekta? ➝ this je taj objekat.
 // Pozvana sa new? ➝ this je novi objekat.
 // Callback funkcija (setTimeout, event listener)? ➝ Zavisno od toga kako je pozvana.
+
+const obj = {
+  name: "SASA",
+  calcuclateAge: function () {
+    console.log(this.name + "15 godina");
+  },
+};
+
+obj.calcuclateAge();
