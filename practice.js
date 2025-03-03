@@ -225,7 +225,7 @@
 
 // obj.calcuclateAge();
 
-// CLOUSERS
+// ===================== CLOUSERS
 // sve pozicnje kad funckija vraca funkciju i mi pozivamo "prvu" funkciju
 
 // function createMultiplier(multiplier) {
@@ -239,3 +239,18 @@
 
 // console.log(double(10));
 // console.log(triple(5));
+
+// ================== Async
+
+function addTwo() {
+  console.log("Andjela");
+}
+function blocCode() {
+  const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  for (let i = 0; i <= arr.length - 1; i++) {
+    console.log(arr[i]);
+  }
+}
+blocCode();
+setTimeout(addTwo, 0);
+console.log("Jovan");
