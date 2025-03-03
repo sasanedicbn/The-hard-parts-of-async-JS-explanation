@@ -261,6 +261,8 @@ const displayData = (data) => {
   console.log(data);
 };
 
-const fetchData = fetch("https://www.opensanctum.com/v1/churches/id/2");
-console.log(fetchData);
+const fetchData = fetch("https://www.opensanctum.com/v1/churches/id/2")
+  .then((response) => response.json())
+  .then((data) => console.log(data));
+
 // fetchData.then((data) => console.log(data));
