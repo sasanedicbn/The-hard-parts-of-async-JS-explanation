@@ -242,15 +242,25 @@
 
 // ================== Async
 
-function addTwo() {
-  console.log("Andjela");
-}
-function blocCode() {
-  const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  for (let i = 0; i <= arr.length - 1; i++) {
-    console.log(arr[i]);
-  }
-}
-blocCode();
-setTimeout(addTwo, 0);
-console.log("Jovan");
+// function addTwo() {
+//   console.log("Andjela");
+// }
+// function blocCode() {
+//   const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+//   for (let i = 0; i <= arr.length - 1; i++) {
+//     console.log(arr[i]);
+//   }
+// }
+// blocCode();
+// setTimeout(addTwo, 0);
+// console.log("Jovan");
+
+// Promises
+
+const displayData = (data) => {
+  console.log(data);
+};
+
+const fetchData = fetch("https://www.opensanctum.com/v1/churches/id/2");
+console.log(fetchData);
+// fetchData.then((data) => console.log(data));
