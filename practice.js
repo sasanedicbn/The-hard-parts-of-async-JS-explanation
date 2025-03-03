@@ -265,4 +265,16 @@ const fetchData = fetch("https://www.opensanctum.com/v1/churches/id/2")
   .then((response) => response.json())
   .then((data) => console.log(data));
 
-// fetchData.then((data) => console.log(data));
+function then(callback) {
+  return new Promise((resolve, reject) => {
+    // Čekamo da se trenutni Promise resolved
+    this.onFulfilled = (result) => {
+      // Pozivamo callback sa rezultatom
+      const newResult = callback(result);
+      resolve(newResult); // Resolvujemo novi Promise sa rezultatom callback-a
+    };
+    this.onRejected = (error) => {
+      reject(error); // Ako je došlo do greške, reject-ujemo
+    };
+  });
+}
