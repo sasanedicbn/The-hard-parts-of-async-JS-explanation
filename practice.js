@@ -299,3 +299,21 @@
 //naravno izmedju sihronom i ovo useeffecta updajtuje se dom,
 // ako je useffect [], sve isto ide samo se dom nece updejtovati jer nemam updejta
 //ako imam vise dependecies on ih grupise i oni se pokrecu samo jednom
+
+// Usestate
+
+function useState(initialValue) {
+  let state = initialValue;
+
+  function setState(newValue) {
+    state = newValue;
+  }
+
+  return [state, setState];
+}
+
+const [count, setCount] = useState(0);
+
+console.log(count); // 0
+setCount(5); // State updated to: 5
+console.log(count); // 5 (ovo neće raditi kako očekujemo zbog jednostavnosti primjera)
