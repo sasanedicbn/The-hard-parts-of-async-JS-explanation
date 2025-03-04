@@ -392,14 +392,32 @@
 // console.log(activeUsers);
 
 // ===================== 5
-function sortProducts(products) {
-  return products.sort((a, b) => a.price - b.price);
-}
-const products = [
-  { id: 1, name: "Laptop", price: 1000 },
-  { id: 2, name: "Shirt", price: 20 },
-  { id: 3, name: "Headphones", price: 150 },
-];
+// function sortProducts(products) {
+//   return products.sort((a, b) => a.price - b.price);
+// }
+// const products = [
+//   { id: 1, name: "Laptop", price: 1000 },
+//   { id: 2, name: "Shirt", price: 20 },
+//   { id: 3, name: "Headphones", price: 150 },
+// ];
 
-const sortedData = sortProducts(products);
-console.log(sortedData);
+// const sortedData = sortProducts(products);
+// console.log(sortedData);
+
+//  ===================== 6
+// function calcuclateProducts(products) {
+//   return products.reduce((acc, prod) => {
+//     const allProducts = acc + prod.price * prod.quantity;
+//     return allProducts;
+//   }, 0);
+// }
+
+// const products = [
+//   { id: 1, name: "Laptop", price: 1000, quantity: 2 },
+//   { id: 2, name: "Shirt", price: 20, quantity: 5 },
+//   { id: 3, name: "Headphones", price: 150, quantity: 1 },
+// ];
+
+// const result = calcuclateProducts(products);
+
+// console.log(result);
