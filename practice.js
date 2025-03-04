@@ -346,14 +346,31 @@
 //   }
 // });
 // =================== 2
-const fetchData = fetch("https://jsonplaceholder.typicode.com/posts")
-  .then((response) => {
-    if (!response.ok) {
-      throw new Error("doslo je do greske" + response.status);
-    }
-    response.json();
-  })
-  .then((data) => console.log(data))
-  .catch((error) => {
-    console.log(error);
+// const fetchData = fetch("https://jsonplaceholder.typicode.com/posts")
+//   .then((response) => {
+//     if (!response.ok) {
+//       throw new Error("doslo je do greske" + response.status);
+//     }
+//     response.json();
+//   })
+//   .then((data) => console.log(data))
+//   .catch((error) => {
+//     console.log(error);
+//   });
+// ==================== 3
+function processUser(users) {
+  const usersAbove18 = users.filter((user) => user.age > 18);
+
+  return usersAbove18.map((user) => {
+    return { name: user.name, email: user.email };
   });
+}
+
+const users = [
+  { id: 1, name: "Alice", age: 25, email: "alice@example.com" },
+  { id: 2, name: "Bob", age: 17, email: "bob@example.com" },
+  { id: 3, name: "Charlie", age: 30, email: "charlie@example.com" },
+];
+
+const usersAbove18 = processUser(users);
+console.log(usersAbove18);
