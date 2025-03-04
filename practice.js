@@ -358,19 +358,48 @@
 //     console.log(error);
 //   });
 // ==================== 3
-function processUser(users) {
-  const usersAbove18 = users.filter((user) => user.age > 18);
+// function processUser(users) {
+//   const usersAbove18 = users.filter((user) => user.age > 18);
 
-  return usersAbove18.map((user) => {
-    return { name: user.name, email: user.email };
-  });
+//   return usersAbove18.map((user) => {
+//     return { name: user.name, email: user.email };
+//   });
+// }
+
+// const users = [
+//   { id: 1, name: "Alice", age: 25, email: "alice@example.com" },
+//   { id: 2, name: "Bob", age: 17, email: "bob@example.com" },
+//   { id: 3, name: "Charlie", age: 30, email: "charlie@example.com" },
+// ];
+
+// const usersAbove18 = processUser(users);
+// console.log(usersAbove18);
+
+// function getActiveUsers(users) {
+//   const activeUser = users
+//     .filter((user) => user.isActive === true)
+//     .map((acUser) => {
+//       return { name: acUser.name, age: acUser.age };
+//     });
+//   return activeUser;
+// }
+// const users = [
+//   { id: 1, name: "Alice", age: 25, isActive: true },
+//   { id: 2, name: "Bob", age: 17, isActive: false },
+//   { id: 3, name: "Charlie", age: 30, isActive: true },
+// ];
+// const activeUsers = getActiveUsers(users);
+// console.log(activeUsers);
+
+// ===================== 5
+function sortProducts(products) {
+  return products.sort((a, b) => a.price - b.price);
 }
-
-const users = [
-  { id: 1, name: "Alice", age: 25, email: "alice@example.com" },
-  { id: 2, name: "Bob", age: 17, email: "bob@example.com" },
-  { id: 3, name: "Charlie", age: 30, email: "charlie@example.com" },
+const products = [
+  { id: 1, name: "Laptop", price: 1000 },
+  { id: 2, name: "Shirt", price: 20 },
+  { id: 3, name: "Headphones", price: 150 },
 ];
 
-const usersAbove18 = processUser(users);
-console.log(usersAbove18);
+const sortedData = sortProducts(products);
+console.log(sortedData);
