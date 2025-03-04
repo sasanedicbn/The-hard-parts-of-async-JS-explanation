@@ -315,33 +315,45 @@
 // const [count, setCount] = useState(0);
 
 // some basic exercieses
+// ============== 1
+// function createButton() {
+//   const btn = document.createElement("button");
+//   btn.classList.add("btn");
+//   btn.textContent = "Klikni me";
+//   document.body.appendChild(btn);
+//   return btn;
+// }
 
-function createButton() {
-  const btn = document.createElement("button");
-  btn.classList.add("btn");
-  btn.textContent = "Klikni me";
-  document.body.appendChild(btn);
-  return btn;
-}
+// function addParagraph(tekst) {
+//   const contentDiv = document.getElementById("content");
+//   const p = document.createElement("p");
+//   p.textContent = tekst;
+//   contentDiv.appendChild(p);
+// }
 
-function addParagraph(tekst) {
-  const contentDiv = document.getElementById("content");
-  const p = document.createElement("p");
-  p.textContent = tekst;
-  contentDiv.appendChild(p);
-}
+// let brojKlikova = 0;
 
-let brojKlikova = 0;
+// const btn = createButton();
 
-const btn = createButton();
+// btn.addEventListener("click", (e) => {
+//   brojKlikova++;
 
-btn.addEventListener("click", (e) => {
-  brojKlikova++;
+//   addParagraph("Kliknuto!");
 
-  addParagraph("Kliknuto!");
-
-  if (brojKlikova >= 5) {
-    btn.disabled = true;
-    btn.textContent = "Dostignut limit klikova";
-  }
-});
+//   if (brojKlikova >= 5) {
+//     btn.disabled = true;
+//     btn.textContent = "Dostignut limit klikova";
+//   }
+// });
+// =================== 2
+const fetchData = fetch("https://jsonplaceholder.typicode.com/posts")
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error("doslo je do greske" + response.status);
+    }
+    response.json();
+  })
+  .then((data) => console.log(data))
+  .catch((error) => {
+    console.log(error);
+  });
