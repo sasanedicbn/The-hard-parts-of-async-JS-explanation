@@ -302,18 +302,46 @@
 
 // Usestate
 
-function useState(initialValue) {
-  let state = initialValue;
+// function useState(initialValue) {
+//   let state = initialValue;
 
-  function setState(newValue) {
-    state = newValue;
-  }
+//   function setState(newValue) {
+//     state = newValue;
+//   }
 
-  return [state, setState];
+//   return [state, setState];
+// }
+
+// const [count, setCount] = useState(0);
+
+// some basic exercieses
+
+function createButton() {
+  const btn = document.createElement("button");
+  btn.classList.add("btn");
+  btn.textContent = "Klikni me";
+  document.body.appendChild(btn);
+  return btn;
 }
 
-const [count, setCount] = useState(0);
+function addParagraph(tekst) {
+  const contentDiv = document.getElementById("content");
+  const p = document.createElement("p");
+  p.textContent = tekst;
+  contentDiv.appendChild(p);
+}
 
-console.log(count); // 0
-setCount(5); // State updated to: 5
-console.log(count); // 5 (ovo neće raditi kako očekujemo zbog jednostavnosti primjera)
+let brojKlikova = 0;
+
+const btn = createButton();
+
+btn.addEventListener("click", (e) => {
+  brojKlikova++;
+
+  addParagraph("Kliknuto!");
+
+  if (brojKlikova >= 5) {
+    btn.disabled = true;
+    btn.textContent = "Dostignut limit klikova";
+  }
+});
