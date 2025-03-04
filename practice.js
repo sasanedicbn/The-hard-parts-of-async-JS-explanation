@@ -421,3 +421,53 @@
 // const result = calcuclateProducts(products);
 
 // console.log(result);
+
+// ================= 7
+
+// const findMostFrequentCategory = (products) => {
+//   const categoryCount = {};
+//   products.forEach((product) => {
+//     const { category } = product;
+//     if (categoryCount[category]) {
+//       categoryCount[category]++;
+//     } else {
+//       categoryCount[category] = 1;
+//     }
+//   });
+// };
+
+// const products = [
+//   { id: 1, name: "Laptop", category: "Electronics" },
+//   { id: 2, name: "Shirt", category: "Clothing" },
+//   { id: 3, name: "Headphones", category: "Electronics" },
+//   { id: 4, name: "Shoes", category: "Clothing" },
+//   { id: 5, name: "Smartphone", category: "Electronics" },
+// ];
+
+// findMostFrequentCategory(products);
+
+// =================== 8
+// const users = [
+//   { id: 1, name: "Alice", email: "alice@example.com" },
+//   { id: 2, name: "Bob", email: "bob@example.com" },
+//   { id: 3, name: "Charlie", email: "charlie@example.com" },
+// ];
+
+// const userWithLongestName = users.reduce((longest, user) => {
+//   return user.name.length > longest.name.length ? user : longest;
+// });
+
+// console.log(userWithLongestName);
+
+// ========================== 9
+// const doubleArray = [1, 2, 3, 4, 5, 6];
+// for (let i = 0; i <= doubleArray.length - 1; i++) {
+//   const evenNum = doubleArray[i] % 2 === 0;
+
+//   if (evenNum) {
+//     doubleArray[i] = doubleArray[i] * 2;
+//   }
+
+//   console.log(evenNum);
+//   console.log(doubleArray[i]);
+// }
