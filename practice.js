@@ -257,24 +257,45 @@
 
 // Promises
 
-const displayData = (data) => {
-  console.log(data);
-};
+// const displayData = (data) => {
+//   console.log(data);
+// };
 
-const fetchData = fetch("https://www.opensanctum.com/v1/churches/id/2")
-  .then((response) => response.json())
-  .then((data) => console.log(data));
+// const fetchData = fetch("https://www.opensanctum.com/v1/churches/id/2")
+//   .then((response) => response.json())
+//   .then((data) => console.log(data));
 
-function then(callback) {
-  return new Promise((resolve, reject) => {
-    // Čekamo da se trenutni Promise resolved
-    this.onFulfilled = (result) => {
-      // Pozivamo callback sa rezultatom
-      const newResult = callback(result);
-      resolve(newResult); // Resolvujemo novi Promise sa rezultatom callback-a
-    };
-    this.onRejected = (error) => {
-      reject(error); // Ako je došlo do greške, reject-ujemo
-    };
-  });
-}
+// function then(callback) {
+//   return new Promise((resolve, reject) => {
+//     // Čekamo da se trenutni Promise resolved
+//     this.onFulfilled = (result) => {
+//       // Pozivamo callback sa rezultatom
+//       const newResult = callback(result);
+//       resolve(newResult); // Resolvujemo novi Promise sa rezultatom callback-a
+//     };
+//     this.onRejected = (error) => {
+//       reject(error); // Ako je došlo do greške, reject-ujemo
+//     };
+//   });
+// }
+
+// const fetchsomeData = async () => {
+//   try {
+//     const response = await fetch(
+//       "https://www.opensanctum.com/v1/churches/id/2"
+//     );
+//     const data = await response.json();
+//     console.log(data);
+//   } catch (error) {
+//     throw new Error(error.msg || "Something went wrong");
+//   }
+// };
+// fetchsomeData();
+
+// USEEFFECT
+
+// ponasa se kao setTimeout npr kad pozovem i ide isto u makrotask queue(2.) i radi sa event loopom
+//sav se znaci kod sinhroni izvrsi dok on proradi ako se npr state updejtuje unutar useeffecta onda se vrsi jos jedan render
+//naravno izmedju sihronom i ovo useeffecta updajtuje se dom,
+// ako je useffect [], sve isto ide samo se dom nece updejtovati jer nemam updejta
+//ako imam vise dependecies on ih grupise i oni se pokrecu samo jednom
