@@ -483,23 +483,38 @@
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 // 1.
 
-function checkEvenNumber(number) {
-  if (number % 2 === 0) {
-    console.log("broj je paran");
-  } else {
-    console.log("broj nije paran");
-  }
-}
-checkEvenNumber(5);
+// function checkEvenNumber(number) {
+//   if (number % 2 === 0) {
+//     console.log("broj je paran");
+//   } else {
+//     console.log("broj nije paran");
+//   }
+// }
+// checkEvenNumber(5);
 
 // 2
-function biggestNumber(a, b, c) {
-  let najveci = a;
-  if (b > najveci) {
-    najveci = b;
-  } else {
-    najveci = c;
+// function biggestNumber(a, b, c) {
+//   let najveci = a;
+//   if (b > najveci) {
+//     najveci = b;
+//   }
+//   if (c > najveci) {
+//     najveci = c;
+//   }
+//   return najveci;
+// }
+// const number = biggestNumber(2, 5, 6);
+// console.log(number, "nnum");
+
+// 3.
+function sumNumbers(numbers) {
+  console.log("samo numbers", numbers);
+  let allNumbers = 0;
+  for (let i = 0; i <= numbers.length - 1; i++) {
+    allNumbers += numbers[i];
   }
-  return najveci;
+  return allNumbers;
 }
-biggestNumber(10, 5, 6);
+
+const result = sumNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+console.log(result);
