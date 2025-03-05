@@ -507,14 +507,33 @@
 // console.log(number, "nnum");
 
 // 3.
-function sumNumbers(numbers) {
-  console.log("samo numbers", numbers);
-  let allNumbers = 0;
+// function sumNumbers(numbers) {
+//   console.log("samo numbers", numbers);
+//   let allNumbers = 0;
+//   for (let i = 0; i <= numbers.length - 1; i++) {
+//     allNumbers += numbers[i];
+//   }
+//   return allNumbers;
+// }
+
+// const result = sumNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+// console.log(result);
+
+// 4.
+function findBiggestNumber(numbers) {
+  let biggestNum = 0;
   for (let i = 0; i <= numbers.length - 1; i++) {
-    allNumbers += numbers[i];
+    if (biggestNum < numbers[i]) {
+      console.log(numbers[i]);
+      biggestNum = +numbers[i];
+      console.log(biggestNum, "bignum");
+    } else {
+      biggestNum;
+    }
   }
-  return allNumbers;
+  return biggestNum;
 }
 
-const result = sumNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
-console.log(result);
+const result = findBiggestNumber([5, 10]);
+
+// console.log(result);
