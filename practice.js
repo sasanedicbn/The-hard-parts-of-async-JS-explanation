@@ -540,14 +540,29 @@
 
 // 5.
 //calculate even numbers in array
-function calcuclateEvenNumbers(numbers) {
-  let evenNumbers = 0;
-  for (let i = 0; i <= numbers.length - 1; i++) {
-    if (numbers[i] % 2 === 0) {
-      evenNumbers++;
-    }
+// function calcuclateEvenNumbers(numbers) {
+//   let evenNumbers = 0;
+//   for (let i = 0; i <= numbers.length - 1; i++) {
+//     if (numbers[i] % 2 === 0) {
+//       evenNumbers++;
+//     }
+//   }
+//   return evenNumbers;
+// }
+// const result = calcuclateEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+// console.log(result);
+
+// 6.
+// Napiši funkciju koja prima niz i koristi for petlju da stvori novi niz
+//  s elementima originalnog niza u obrnutom redoslijedu.
+
+const reverseArrNumbers = (numbers) => {
+  const reversedArr = [];
+  for (let i = numbers.length - 1; i >= 0; i--) {
+    reversedArr.push(numbers[i]);
   }
-  return evenNumbers;
-}
-const result = calcuclateEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+  return reversedArr;
+};
+
+const result = reverseArrNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
 console.log(result);
