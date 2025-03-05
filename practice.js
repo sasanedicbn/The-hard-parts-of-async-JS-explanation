@@ -471,3 +471,35 @@
 //   console.log(evenNum);
 //   console.log(doubleArray[i]);
 // }
+
+// const string = "Jovan";
+
+// function reverseString(name) {
+//   return name.split("").reverse().join("");
+// }
+// const names = reverseString(string);
+// console.log(names);
+
+// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// 1.
+
+function checkEvenNumber(number) {
+  if (number % 2 === 0) {
+    console.log("broj je paran");
+  } else {
+    console.log("broj nije paran");
+  }
+}
+checkEvenNumber(5);
+
+// 2
+function biggestNumber(a, b, c) {
+  let najveci = a;
+  if (b > najveci) {
+    najveci = b;
+  } else {
+    najveci = c;
+  }
+  return najveci;
+}
+biggestNumber(10, 5, 6);
