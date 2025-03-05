@@ -520,20 +520,34 @@
 // console.log(result);
 
 // 4.
-function findBiggestNumber(numbers) {
-  let biggestNum = 0;
-  for (let i = 0; i <= numbers.length - 1; i++) {
-    if (biggestNum < numbers[i]) {
-      console.log(numbers[i]);
-      biggestNum = +numbers[i];
-      console.log(biggestNum, "bignum");
-    } else {
-      biggestNum;
-    }
-  }
-  return biggestNum;
-}
+// function findBiggestNumber(numbers) {
+//   let biggestNum = 0;
+//   for (let i = 0; i <= numbers.length - 1; i++) {
+//     if (biggestNum < numbers[i]) {
+//       console.log(numbers[i]);
+//       biggestNum = +numbers[i];
+//       console.log(biggestNum, "bignum");
+//     } else {
+//       biggestNum;
+//     }
+//   }
+//   return biggestNum;
+// }
 
-const result = findBiggestNumber([5, 10]);
+// const result = findBiggestNumber([5, 10]);
 
 // console.log(result);
+
+// 5.
+//calculate even numbers in array
+function calcuclateEvenNumbers(numbers) {
+  let evenNumbers = 0;
+  for (let i = 0; i <= numbers.length - 1; i++) {
+    if (numbers[i] % 2 === 0) {
+      evenNumbers++;
+    }
+  }
+  return evenNumbers;
+}
+const result = calcuclateEvenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+console.log(result);
