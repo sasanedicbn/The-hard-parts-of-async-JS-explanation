@@ -556,13 +556,29 @@
 // Napiši funkciju koja prima niz i koristi for petlju da stvori novi niz
 //  s elementima originalnog niza u obrnutom redoslijedu.
 
-const reverseArrNumbers = (numbers) => {
-  const reversedArr = [];
-  for (let i = numbers.length - 1; i >= 0; i--) {
-    reversedArr.push(numbers[i]);
-  }
-  return reversedArr;
-};
+// const reverseArrNumbers = (numbers) => {
+//   const reversedArr = [];
+//   for (let i = numbers.length - 1; i >= 0; i--) {
+//     reversedArr.push(numbers[i]);
+//   }
+//   return reversedArr;
+// };
 
-const result = reverseArrNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+// const result = reverseArrNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+// console.log(result);
+
+// 7.
+// Napiši funkciju koja prima niz brojeva
+//  i koristi for petlju da stvori novi niz koji sadrži samo pozitivne brojeve.
+
+function positiveNumber(numbers) {
+  const positiveArr = [];
+  for (let i = 0; i <= numbers.length - 1; i++) {
+    if (numbers[i] > 0) {
+      positiveArr.push(numbers[i]);
+    }
+  }
+  return positiveArr;
+}
+const result = positiveNumber([1, -2, 3, 4, -5, 6, -7, 8, -9, 10]);
 console.log(result);
