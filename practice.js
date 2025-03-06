@@ -587,13 +587,30 @@
 // Množenje elemenata niza
 // Napiši funkciju koja prima niz brojeva i koristi for petlju da pomnoži sve elemente niza.
 
-function multiplicationArr(numbers) {
-  let counter = 1;
-  for (let i = 0; i <= numbers.length - 1; i++) {
-    counter *= numbers[i];
-  }
+// function multiplicationArr(numbers) {
+//   let counter = 1;
+//   for (let i = 0; i <= numbers.length - 1; i++) {
+//     counter *= numbers[i];
+//   }
 
-  return counter;
+//   return counter;
+// }
+// const result = multiplicationArr([2, 4, 10]);
+// console.log(result);
+
+//9
+//Pronalaženje indeksa određenog elementa
+//Napiši funkciju koja prima niz i određeni element,
+// te koristi for petlju da pronađe indeks tog elementa u nizu. Ako element ne postoji, vrati -1.
+
+function findElementIndex(arr, element) {
+  for (let i = 0; i <= arr.length; i++) {
+    if (arr[i] === element) {
+      return i;
+    }
+  }
+  return -1;
 }
-const result = multiplicationArr([2, 4, 10]);
-console.log(result);
+
+const index = findElementIndex([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 8);
+console.log(index);
