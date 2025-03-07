@@ -619,15 +619,30 @@
 // Ispisivanje svakog drugog elementa niza
 // Napiši funkciju koja prima niz i koristi for petlju da ispiše svaki drugi element niza.
 
-function example(arr) {
-  const filterNums = [];
+// function example(arr) {
+//   const filterNums = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (i % 2 !== 0) {
+//       filterNums.push(arr[i]);
+//     }
+//     console.log(i);
+//   }
+//   return filterNums;
+// }
+// const index = example([1, 2, 3, 2, 5, 6, 7, 8, 9, 10]);
+// console.log(index);
+
+//11.
+// Provjera je li niz sortiran
+// Napiši funkciju koja prima niz brojeva i koristi for petlju da provjeri je li niz sortiran uzlazno.
+
+function sortedArr(arr) {
   for (let i = 0; i < arr.length; i++) {
-    if (i % 2 !== 0) {
-      filterNums.push(arr[i]);
+    if (arr[i + 1] > arr[i]) {
+      return true;
     }
-    console.log(i);
+    return false;
   }
-  return filterNums;
 }
-const index = example([1, 2, 3, 2, 5, 6, 7, 8, 9, 10]);
+const index = sortedArr([1, 2, 3, 2, 5, 6, 7, 8, 9, 10]);
 console.log(index);
