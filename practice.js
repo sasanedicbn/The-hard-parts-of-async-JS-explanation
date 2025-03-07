@@ -654,8 +654,8 @@
 function removeDuplicate(arr) {
   const cleanArr = [];
   for (let i = 0; i < arr.length; i++) {
-    cleanArr.push(arr[i]);
-    if (cleanArr[i] === arr[i]) {
+    if (!cleanArr.includes(arr[i])) {
+      cleanArr.push(arr[i]);
     }
   }
   return cleanArr;
