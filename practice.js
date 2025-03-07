@@ -603,14 +603,31 @@
 //Napiši funkciju koja prima niz i određeni element,
 // te koristi for petlju da pronađe indeks tog elementa u nizu. Ako element ne postoji, vrati -1.
 
-function findElementIndex(arr, element) {
-  for (let i = 0; i <= arr.length; i++) {
-    if (arr[i] === element) {
-      return i;
-    }
-  }
-  return -1;
-}
+// function findElementIndex(arr, element) {
+//   for (let i = 0; i <= arr.length; i++) {
+//     if (arr[i] === element) {
+//       return i;
+//     }
+//   }
+//   return -1;
+// }
 
-const index = findElementIndex([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 8);
+// const index = findElementIndex([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 8);
+// console.log(index);
+
+//10.
+// Ispisivanje svakog drugog elementa niza
+// Napiši funkciju koja prima niz i koristi for petlju da ispiše svaki drugi element niza.
+
+function example(arr) {
+  const filterNums = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (i % 2 !== 0) {
+      filterNums.push(arr[i]);
+    }
+    console.log(i);
+  }
+  return filterNums;
+}
+const index = example([1, 2, 3, 2, 5, 6, 7, 8, 9, 10]);
 console.log(index);
