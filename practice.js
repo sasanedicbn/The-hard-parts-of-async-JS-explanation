@@ -636,13 +636,29 @@
 // Provjera je li niz sortiran
 // Napiši funkciju koja prima niz brojeva i koristi for petlju da provjeri je li niz sortiran uzlazno.
 
-function sortedArr(arr) {
+// function sortedArr(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i + 1] > arr[i]) {
+//       return true;
+//     }
+//     return false;
+//   }
+// }
+// const index = sortedArr([1, 2, 3, 2, 5, 6, 7, 8, 9, 10]);
+// console.log(index);
+
+// 12
+// Uklanjanje duplikata iz niza
+// Napiši funkciju koja prima niz i koristi for petlju da stvori novi niz bez duplikata.
+
+function removeDuplicate(arr) {
+  const cleanArr = [];
   for (let i = 0; i < arr.length; i++) {
-    if (arr[i + 1] > arr[i]) {
-      return true;
+    cleanArr.push(arr[i]);
+    if (cleanArr[i] === arr[i]) {
     }
-    return false;
   }
+  return cleanArr;
 }
-const index = sortedArr([1, 2, 3, 2, 5, 6, 7, 8, 9, 10]);
+const index = removeDuplicate([1, 2, 3, 2, 5, 6, 2, 8, 9, 10]);
 console.log(index);
