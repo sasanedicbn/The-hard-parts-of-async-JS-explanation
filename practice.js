@@ -651,14 +651,18 @@
 // Uklanjanje duplikata iz niza
 // Napiši funkciju koja prima niz i koristi for petlju da stvori novi niz bez duplikata.
 
+// function removeDuplicate(arr) {
+//   const cleanArr = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (!cleanArr.includes(arr[i])) {
+//       cleanArr.push(arr[i]);
+//     }
+//   }
+//   return cleanArr;
+// }
 function removeDuplicate(arr) {
-  const cleanArr = [];
-  for (let i = 0; i < arr.length; i++) {
-    if (!cleanArr.includes(arr[i])) {
-      cleanArr.push(arr[i]);
-    }
-  }
-  return cleanArr;
+  const newArr = [...new Set()];
+  return newArr;
 }
 const index = removeDuplicate([1, 2, 3, 2, 5, 6, 2, 8, 9, 10]);
 console.log(index);
