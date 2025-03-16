@@ -670,20 +670,19 @@
 // broji broj samoglasnika u stringu
 //a e i o u
 function findVowels(word) {
-  let samoglasnici = ["a", "e", "i", "o", "u"];
-  //   for (let i = 0; i <= word.length; i++) {
-  //     const char = word[i];
- 
-  //     // if (word[i].includes(samoglasnici)) {
-  //     //   return word[i];
-  //     // }
-  //   }
+  let samoglasnici = "a";
+
+  let result = [];
   let charachters = word.split("");
-  if(charachters.includes{samoglasnici}){
-    console.log(charachters)
+  for (let i = 0; i >= word.length; i++) {
+    if (charachters[i].includes(samoglasnici)) {
+      result.push(charachters[i]);
+    }
   }
-  console.log(charachters);
-  console.log(word[i]);
+  return result;
+  //   console.log(charachters);
+  //   console.log(word[i]);
 }
 
-findVowels("sasa");
+const ra = findVowels("sasa");
+console.log(ra);
