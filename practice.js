@@ -666,3 +666,24 @@
 // }
 // const index = removeDuplicate([1, 2, 3, 2, 5, 6, 2, 8, 9, 10]);
 // console.log(index);
+// 13
+// broji broj samoglasnika u stringu
+//a e i o u
+function findVowels(word) {
+  let samoglasnici = ["a", "e", "i", "o", "u"];
+  //   for (let i = 0; i <= word.length; i++) {
+  //     const char = word[i];
+ 
+  //     // if (word[i].includes(samoglasnici)) {
+  //     //   return word[i];
+  //     // }
+  //   }
+  let charachters = word.split("");
+  if(charachters.includes{samoglasnici}){
+    console.log(charachters)
+  }
+  console.log(charachters);
+  console.log(word[i]);
+}
+
+findVowels("sasa");
