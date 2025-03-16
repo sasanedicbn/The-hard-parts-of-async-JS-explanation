@@ -660,9 +660,9 @@
 //   }
 //   return cleanArr;
 // }
-function removeDuplicate(arr) {
-  const newArr = [...new Set()];
-  return newArr;
-}
-const index = removeDuplicate([1, 2, 3, 2, 5, 6, 2, 8, 9, 10]);
-console.log(index);
+// function removeDuplicate(arr) {
+//   const newArr = [...new Set()];
+//   return newArr;
+// }
+// const index = removeDuplicate([1, 2, 3, 2, 5, 6, 2, 8, 9, 10]);
+// console.log(index);
