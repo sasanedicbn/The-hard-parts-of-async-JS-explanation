@@ -687,4 +687,4 @@ function findVowels(word) {
 const ra = findVowels("sasa");
 console.log(ra);
 
-// LEARN ABOUT Design - typography
+// LEARN ABOUT Design - colors
