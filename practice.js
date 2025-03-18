@@ -714,6 +714,9 @@
 // console.log(result, "rezultat");
 // Broj 16
 //Napiši funkciju koja prima string i vraća novi string gdje su svi samoglasnici zamijenjeni sa *.
-function vowelsStars() {}
+function vowelsStars() {
+  // const vowels =
+}
 const result = vowelsStars("Jovanom");
 console.log("result", result);
+// Learn today about design - Composition
