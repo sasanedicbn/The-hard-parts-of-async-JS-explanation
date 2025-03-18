@@ -685,16 +685,30 @@
 // console.log(ra);
 // 14
 // Napiši funkciju koja prima string i vraća najdužu riječ u tom stringu.
-function longestString(string) {
-  let longestWord = "";
-  const charachters = string.split(" ");
-  for (let i = 0; i < charachters.length; i++) {
-    if (charachters[i].length > longestWord.length) {
-      longestWord = charachters[i];
-    }
-  }
-  return longestWord;
+// function longestString(string) {
+//   let longestWord = "";
+//   const charachters = string.split(" ");
+//   for (let i = 0; i < charachters.length; i++) {
+//     if (charachters[i].length > longestWord.length) {
+//       longestWord = charachters[i];
+//     }
+//   }
+//   return longestWord;
+// }
+
+// const result = longestString("Danas je moj rodjendan.");
+// console.log("result", result);
+// Broj 15
+// Napiši funkciju koja prima broj sekundi i vraća string u formatu "sati:minute:sekunde".
+// Primjer: Za 3661 sekundi, rezultat je "1:1:1".
+// 1 sat => 60 min => 3600sekundi
+//1 min => 60 sekundi
+function convertNumbers(numbers) {
+  const hours = Math.floor(numbers / 3600);
+  const minutes = Math.floor((numbers % 3600) / 60);
+  const seconds = numbers % 60;
+  return `${hours}:${minutes}:${seconds}`;
 }
 
-const result = longestString("Danas je moj rodjendan.");
-console.log("result", result);
+const result = convertNumbers(3661);
+console.log(result, "rezultat");
