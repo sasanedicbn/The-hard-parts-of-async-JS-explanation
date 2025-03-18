@@ -703,12 +703,17 @@
 // Primjer: Za 3661 sekundi, rezultat je "1:1:1".
 // 1 sat => 60 min => 3600sekundi
 //1 min => 60 sekundi
-function convertNumbers(numbers) {
-  const hours = Math.floor(numbers / 3600);
-  const minutes = Math.floor((numbers % 3600) / 60);
-  const seconds = numbers % 60;
-  return `${hours}:${minutes}:${seconds}`;
-}
+// function convertNumbers(numbers) {
+//   const hours = Math.floor(numbers / 3600);
+//   const minutes = Math.floor((numbers % 3600) / 60);
+//   const seconds = numbers % 60;
+//   return `${hours}:${minutes}:${seconds}`;
+// }
 
-const result = convertNumbers(3661);
-console.log(result, "rezultat");
+// const result = convertNumbers(3661);
+// console.log(result, "rezultat");
+// Broj 16
+//Napiši funkciju koja prima string i vraća novi string gdje su svi samoglasnici zamijenjeni sa *.
+function vowelsStars() {}
+const result = vowelsStars("Jovanom");
+console.log("result", result);
