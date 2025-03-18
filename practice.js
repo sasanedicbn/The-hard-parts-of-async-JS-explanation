@@ -670,21 +670,17 @@
 // broji broj samoglasnika u stringu
 //a e i o u
 function findVowels(word) {
-  let samoglasnici = "a";
+  let samoglasnici = ["a", "e", "i", "o", "u"];
 
   let result = [];
   let charachters = word.split("");
-  for (let i = 0; i >= word.length; i++) {
-    if (charachters[i].includes(samoglasnici)) {
+  for (let i = 0; i < word.length; i++) {
+    if (samoglasnici.includes(charachters[i])) {
       result.push(charachters[i]);
     }
   }
   return result;
-  //   console.log(charachters);
-  //   console.log(word[i]);
 }
 
 const ra = findVowels("sasa");
 console.log(ra);
-
-// LEARN ABOUT Design - ilustartion and photography
