@@ -668,19 +668,33 @@
 // console.log(index);
 // 13
 // broji broj samoglasnika u stringu
-//a e i o u
-function findVowels(word) {
-  let samoglasnici = ["a", "e", "i", "o", "u"];
+// function findVowels(word) {
+//   let samoglasnici = ["a", "e", "i", "o", "u"];
 
-  let result = [];
-  let charachters = word.split("");
-  for (let i = 0; i < word.length; i++) {
-    if (samoglasnici.includes(charachters[i])) {
-      result.push(charachters[i]);
+//   let result = [];
+//   let charachters = word.split("");
+//   for (let i = 0; i < word.length; i++) {
+//     if (samoglasnici.includes(charachters[i])) {
+//       result.push(charachters[i]);
+//     }
+//   }
+//   return result;
+// }
+
+// const ra = findVowels("Andjela");
+// console.log(ra);
+// 14
+// Napiši funkciju koja prima string i vraća najdužu riječ u tom stringu.
+function longestString(string) {
+  let longestWord = "";
+  const charachters = string.split(" ");
+  for (let i = 0; i < charachters.length; i++) {
+    if (charachters[i].length > longestWord.length) {
+      longestWord = charachters[i];
     }
   }
-  return result;
+  return longestWord;
 }
 
-const ra = findVowels("sasa");
-console.log(ra);
+const result = longestString("Danas je moj rodjendan.");
+console.log("result", result);
