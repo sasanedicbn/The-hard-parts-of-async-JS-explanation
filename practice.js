@@ -719,4 +719,4 @@ function vowelsStars() {
 }
 const result = vowelsStars("Jovanom");
 console.log("result", result);
-// Learn today about design - Hjerarhija i konrast, balans
+// Learn today about design - Layout, rhytm and move
