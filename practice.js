@@ -714,9 +714,18 @@
 // console.log(result, "rezultat");
 // Broj 16
 //Napiši funkciju koja prima string i vraća novi string gdje su svi samoglasnici zamijenjeni sa *.
-function vowelsStars() {
-  // const vowels =
+function vowelsStars(string) {
+  const vowels = ["a", "e", "i", "o", "u"];
+  let word = "";
+  for (let i = 0; i < string.length; i++) {
+    if (vowels.includes(string[i])) {
+      word += "*";
+      console.log(word[i]);
+    } else {
+      word += string[i];
+    }
+  }
+  return word;
 }
 const result = vowelsStars("Jovanom");
 console.log("result", result);
-// Learn today about design - Layout, rhytm and move
