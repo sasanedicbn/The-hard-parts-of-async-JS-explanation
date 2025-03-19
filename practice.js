@@ -714,18 +714,36 @@
 // console.log(result, "rezultat");
 // Broj 16
 //Napiši funkciju koja prima string i vraća novi string gdje su svi samoglasnici zamijenjeni sa *.
-function vowelsStars(string) {
-  const vowels = ["a", "e", "i", "o", "u"];
-  let word = "";
-  for (let i = 0; i < string.length; i++) {
-    if (vowels.includes(string[i])) {
-      word += "*";
-      console.log(word[i]);
-    } else {
-      word += string[i];
-    }
+// function vowelsStars(string) {
+//   const vowels = ["a", "e", "i", "o", "u"];
+//   let word = "";
+//   for (let i = 0; i < string.length; i++) {
+//     if (vowels.includes(string[i])) {
+//       word += "*";
+//       console.log(word[i]);
+//     } else {
+//       word += string[i];
+//     }
+//   }
+//   return word;
+// }
+// const result = vowelsStars("Jovanom");
+// console.log("result", result);
+//Broj 17
+// Napiši funkciju koja prima dva stringa i provjerava jesu li oni anagrami
+// (sadrže iste znakove, ali u različitom redoslijedu).
+// Primjer: "listen" i "silent" su anagrami.
+function anagramsStrings(string1, string2) {
+  if (string1.length !== string2.length) {
+    return false;
   }
-  return word;
+  const result1 = string1.split("").sort().join("");
+  const result2 = string2.split("").sort().join("");
+
+  if (result1 === result2) {
+    return true;
+  }
 }
-const result = vowelsStars("Jovanom");
-console.log("result", result);
+
+const result = anagramsStrings("sara", "rasa");
+console.log(result, "result");
