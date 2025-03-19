@@ -754,10 +754,9 @@
 function calculateSuma(numArr) {
   let sum = 0;
   for (let i = 0; i < numArr.length; i++) {
-    console.log("i", i, "numrArr[i]", numArr[i]);
     sum += numArr[i] * numArr[i];
   }
   return sum;
 }
-const result = calculateSuma([1, 2, 3]);
+const result = calculateSuma([1, 2, 3, 4]);
 console.log(result, "result");
