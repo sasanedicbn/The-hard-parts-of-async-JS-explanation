@@ -751,12 +751,26 @@
 // Napiši funkciju koja prima niz brojeva i vraća sumu kvadrata svih brojeva u nizu.
 // Primjer: Za niz [1, 2, 3], rezultat je 1² + 2² + 3² = 14.
 
-function calculateSuma(numArr) {
-  let sum = 0;
-  for (let i = 0; i < numArr.length; i++) {
-    sum += numArr[i] * numArr[i];
-  }
-  return sum;
+// function calculateSuma(numArr) {
+//   let sum = 0;
+//   for (let i = 0; i < numArr.length; i++) {
+//     sum += numArr[i] * numArr[i];
+//   }
+//   return sum;
+// }
+// const result = calculateSuma([1, 2, 3, 4]);
+// console.log(result, "result");
+
+// Broj 19
+// Pretvori prvo slovo svake riječi u veliko
+// Napiši funkciju koja prima string (npr. "hello world") i vraća novi string gdje je prvo slovo
+//  svake riječi veliko (npr. "Hello World").
+function firstLetter(string) {
+  const letter = string
+    .split(" ")
+    .map((word) => word[0].toUpperCase() + word.slice(1))
+    .join(" ");
+  return letter;
 }
-const result = calculateSuma([1, 2, 3, 4]);
+const result = firstLetter("danas je divan dan");
 console.log(result, "result");
