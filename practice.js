@@ -733,17 +733,31 @@
 // Napiši funkciju koja prima dva stringa i provjerava jesu li oni anagrami
 // (sadrže iste znakove, ali u različitom redoslijedu).
 // Primjer: "listen" i "silent" su anagrami.
-function anagramsStrings(string1, string2) {
-  if (string1.length !== string2.length) {
-    return false;
-  }
-  const result1 = string1.split("").sort().join("");
-  const result2 = string2.split("").sort().join("");
+// function anagramsStrings(string1, string2) {
+//   if (string1.length !== string2.length) {
+//     return false;
+//   }
+//   const result1 = string1.split("").sort().join("");
+//   const result2 = string2.split("").sort().join("");
 
-  if (result1 === result2) {
-    return true;
+//   if (result1 === result2) {
+//     return true;
+//   }
+// }
+
+// const result = anagramsStrings("sara", "rasa");
+// console.log(result, "result");
+// Broj 18
+// Napiši funkciju koja prima niz brojeva i vraća sumu kvadrata svih brojeva u nizu.
+// Primjer: Za niz [1, 2, 3], rezultat je 1² + 2² + 3² = 14.
+
+function calculateSuma(numArr) {
+  let sum = 0;
+  for (let i = 0; i < numArr.length; i++) {
+    console.log("i", i, "numrArr[i]", numArr[i]);
+    sum += numArr[i] * numArr[i];
   }
+  return sum;
 }
-
-const result = anagramsStrings("sara", "rasa");
+const result = calculateSuma([1, 2, 3]);
 console.log(result, "result");
