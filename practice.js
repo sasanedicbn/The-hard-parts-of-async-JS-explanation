@@ -793,3 +793,13 @@
 // Napiši funkciju koja prima niz brojeva od 1 do N (gdje jedan broj nedostaje)
 //  i vraća nedostajući broj.
 // Primjer: Za niz [1, 2, 4, 5], nedostajući broj je 3.
+
+function findMissingNum(arr) {
+  for (let i = 0; i < arr.length - 1; i++) {
+    if (arr[i + 1] !== arr[i] + 1) {
+      return arr[i] + 1;
+    }
+  }
+}
+const result = findMissingNum([1, 2, 3, 4, 5, 6]);
+console.log(result, "result");
