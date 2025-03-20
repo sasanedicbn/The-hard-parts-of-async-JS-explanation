@@ -779,12 +779,17 @@
 // Napiši funkciju koja prima string i vraća broj riječi u njemu.
 // Primjer: Za string "Danas je lijep dan", rezultat je 4.
 
-function countWords(string) {
-  const santaces = string
-    .trim("")
-    .split(" ")
-    .filter((word) => word !== "").length;
-  return santaces;
-}
-const result = countWords("danas je moj dan rodjendan");
-console.log(result, "result");
+// function countWords(string) {
+//   const santaces = string
+//     .trim("")
+//     .split(" ")
+//     .filter((word) => word !== "").length;
+//   return santaces;
+// }
+// const result = countWords("danas je moj dan rodjendan");
+// console.log(result, "result");
+
+// Broj 21
+// Napiši funkciju koja prima niz brojeva od 1 do N (gdje jedan broj nedostaje)
+//  i vraća nedostajući broj.
+// Primjer: Za niz [1, 2, 4, 5], nedostajući broj je 3.
