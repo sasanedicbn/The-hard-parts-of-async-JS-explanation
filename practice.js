@@ -828,17 +828,17 @@
 // Napiši funkciju koja prima string i vraća najdužu riječ u tom stringu.
 // Primjer: Za string "Volim programirati u JavaScriptu", rezultat je "programirati".
 
-function longestWord(string) {
-  const santaces = string.split(" ");
-  let longestWord = "";
-  for (let i = 0; i < santaces.length; i++) {
-    if (longestWord.length < santaces[i].length) {
-      longestWord = santaces[i];
-    }
-  }
-  return longestWord;
+// function longestWord(string) {
+//   const santaces = string.split(" ");
+//   let longestWord = "";
+//   for (let i = 0; i < santaces.length; i++) {
+//     if (longestWord.length < santaces[i].length) {
+//       longestWord = santaces[i];
+//     }
+//   }
+//   return longestWord;
 
-  //   console.log(santaces);
-}
-const result = longestWord("Volim programirati u JavaScriptu");
-console.log(result, "result");
+//   //   console.log(santaces);
+// }
+// const result = longestWord("Volim programirati u JavaScriptu");
+// console.log(result, "result");
