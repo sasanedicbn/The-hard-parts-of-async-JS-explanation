@@ -842,3 +842,19 @@
 // }
 // const result = longestWord("Volim programirati u JavaScriptu");
 // console.log(result, "result");
+// Broj 24
+// Provjeri je li string anagram
+// Napiši funkciju koja prima dva stringa i provjerava jesu li oni anagrami
+// (sadrže iste znakove, ali u različitom redoslijedu).
+// Primjer: "listen" i "silent" su anagrami.
+function provjeraAnagrama(word1, word2) {
+  const first = word1.split("").sort().join("");
+  const second = word2.split("").sort().join("");
+  if (first !== second) {
+    return false;
+  } else {
+    return true;
+  }
+}
+const result = provjeraAnagrama("sasa", "asas");
+console.log("result", result);
