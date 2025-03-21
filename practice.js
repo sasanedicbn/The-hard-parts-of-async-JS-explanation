@@ -809,17 +809,36 @@
 // Napiši funkciju koja sortira niz brojeva od najmanjeg
 //  do najvećeg bez korištenja ugrađene sort funkcije.
 // Primjer: Za niz [3, 1, 4, 2], rezultat je [1, 2, 3, 4].
-function sortArray(arr) {
-  const n = arr.length;
-  for (let i = 0; i < n - 1; i++) {
-    for (let j = 0; j < n - i - 1; j++) {
-      if (arr[j] > arr[j + 1]) {
-        [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
-      }
+// function sortArray(arr) {
+//   const n = arr.length;
+//   for (let i = 0; i < n - 1; i++) {
+//     for (let j = 0; j < n - i - 1; j++) {
+//       if (arr[j] > arr[j + 1]) {
+//         [arr[j], arr[j + 1]] = [arr[j + 1], arr[j]];
+//       }
+//     }
+//   }
+//   return arr;
+// }
+
+// const result = sortArray([1, 6, 3, 4, 5, 2]);
+// console.log(result, "result"); // [1, 2, 3, 4, 5, 6]
+// Broj 23
+// Pronađi najdužu riječ u stringu
+// Napiši funkciju koja prima string i vraća najdužu riječ u tom stringu.
+// Primjer: Za string "Volim programirati u JavaScriptu", rezultat je "programirati".
+
+function longestWord(string) {
+  const santaces = string.split(" ");
+  let longestWord = "";
+  for (let i = 0; i < santaces.length; i++) {
+    if (longestWord.length < santaces[i].length) {
+      longestWord = santaces[i];
     }
   }
-  return arr;
-}
+  return longestWord;
 
-const result = sortArray([1, 6, 3, 4, 5, 2]);
-console.log(result, "result"); // [1, 2, 3, 4, 5, 6]
+  //   console.log(santaces);
+}
+const result = longestWord("Volim programirati u JavaScriptu");
+console.log(result, "result");
