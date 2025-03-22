@@ -863,12 +863,32 @@
 // Napiši funkciju koja prima dva broja (početak i kraj) i vraća sumu svih brojeva između
 //  njih (uključujući i ta dva broja).
 // Primjer: Za 1 i 4, rezultat je 10 (1 + 2 + 3 + 4).
-function calclucateBetweenNumbers(startingNum, endingNum) {
-  let result = 0;
-  for (let i = startingNum; i < endingNum + 1; i++) {
-    result += i;
-    return result;
+// function calclucateBetweenNumbers(startingNum, endingNum) {
+//   let result = 0;
+//   for (let i = startingNum; i < endingNum + 1; i++) {
+//     result += i;
+//     return result;
+//   }
+// }
+// const result = calclucateBetweenNumbers(10, 12);
+// console.log("result", result);
+// Broj 26
+// Pronađi najčešći element u nizu
+// Napiši funkciju koja prima niz i vraća element koji se najčešće pojavljuje.
+// Primjer: Za niz [1, 2, 2, 3, 3, 3], rezultat je 3.
+function mostRepetedNum(arr) {
+  const numbers = {};
+  for (let i = 0; i < arr.length; i++) {
+    const num = arr[i]; //1,2,3...
+    if (numbers[num]) {
+      numbers[num]++;
+    } else {
+      numbers[num] = 1;
+    }
+  }
+  for (const num in numbers) {
+    console.log(numbers[num]);
   }
 }
-const result = calclucateBetweenNumbers(10, 12);
-console.log("result", result);
+const result = mostRepetedNum([1, 2, 3, 4, 5, 5, 6, 6, 6]);
+console.log(result, "result");
