@@ -847,14 +847,28 @@
 // Napiši funkciju koja prima dva stringa i provjerava jesu li oni anagrami
 // (sadrže iste znakove, ali u različitom redoslijedu).
 // Primjer: "listen" i "silent" su anagrami.
-function provjeraAnagrama(word1, word2) {
-  const first = word1.split("").sort().join("");
-  const second = word2.split("").sort().join("");
-  if (first !== second) {
-    return false;
-  } else {
-    return true;
+// function provjeraAnagrama(word1, word2) {
+//   const first = word1.split("").sort().join("");
+//   const second = word2.split("").sort().join("");
+//   if (first !== second) {
+//     return false;
+//   } else {
+//     return true;
+//   }
+// }
+// const result = provjeraAnagrama("sasa", "asas");
+// console.log("result", result);
+//Broj 25
+// Suma svih brojeva između dva broja
+// Napiši funkciju koja prima dva broja (početak i kraj) i vraća sumu svih brojeva između
+//  njih (uključujući i ta dva broja).
+// Primjer: Za 1 i 4, rezultat je 10 (1 + 2 + 3 + 4).
+function calclucateBetweenNumbers(startingNum, endingNum) {
+  let result = 0;
+  for (let i = startingNum; i < endingNum + 1; i++) {
+    result += i;
+    return result;
   }
 }
-const result = provjeraAnagrama("sasa", "asas");
+const result = calclucateBetweenNumbers(10, 12);
 console.log("result", result);
