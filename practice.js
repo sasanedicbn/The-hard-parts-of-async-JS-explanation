@@ -892,3 +892,7 @@
 // }
 // const result = mostRepetedNum([1, 2, 3, 4, 5, 5, 6, 6, 6]);
 // console.log(result, "result");
+// Broj 27
+// Vrati rečenicu sa obrnutim redosledom reči
+// Primer: "Hello World" → "World Hello"
+function reverseWords(sentence) {}
