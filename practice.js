@@ -876,19 +876,19 @@
 // Pronađi najčešći element u nizu
 // Napiši funkciju koja prima niz i vraća element koji se najčešće pojavljuje.
 // Primjer: Za niz [1, 2, 2, 3, 3, 3], rezultat je 3.
-function mostRepetedNum(arr) {
-  const numbers = {};
-  for (let i = 0; i < arr.length; i++) {
-    const num = arr[i]; //1,2,3...
-    if (numbers[num]) {
-      numbers[num]++;
-    } else {
-      numbers[num] = 1;
-    }
-  }
-  for (const num in numbers) {
-    console.log(numbers[num]);
-  }
-}
-const result = mostRepetedNum([1, 2, 3, 4, 5, 5, 6, 6, 6]);
-console.log(result, "result");
+// function mostRepetedNum(arr) {
+//   const numbers = {};
+//   for (let i = 0; i < arr.length; i++) {
+//     const num = arr[i];
+//     if (numbers[num]) {
+//       numbers[num]++;
+//     } else {
+//       numbers[num] = 1;
+//     }
+//   }
+//   for (const num in numbers) {
+//     console.log(numbers[num]);
+//   }
+// }
+// const result = mostRepetedNum([1, 2, 3, 4, 5, 5, 6, 6, 6]);
+// console.log(result, "result");
