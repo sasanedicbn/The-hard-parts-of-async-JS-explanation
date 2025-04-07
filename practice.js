@@ -895,10 +895,14 @@
 // Broj 27
 // Vrati rečenicu sa obrnutim redosledom reči
 // Primer: "Hello World" → "World Hello"
-function reverseWords(sentence) {
-  const word = sentence.split(" ").reverse().join(" ");
-  return word;
-}
+// function reverseWords(sentence) {
+//   const word = sentence.split(" ").reverse().join(" ");
+//   return word;
+// }
 
-const result = reverseWords("Hello World");
-console.log(result, "result");
+// const result = reverseWords("Hello World");
+// console.log(result, "result");
+// Broj 28
+// Pronađi najduži palindrom u datom stringu
+// Primer: "babad" → "bab" ili "aba"
+function longestPalindrome(str) {}
