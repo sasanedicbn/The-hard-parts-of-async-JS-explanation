@@ -895,4 +895,10 @@
 // Broj 27
 // Vrati rečenicu sa obrnutim redosledom reči
 // Primer: "Hello World" → "World Hello"
-function reverseWords(sentence) {}
+function reverseWords(sentence) {
+  const word = sentence.split(" ").reverse().join(" ");
+  return word;
+}
+
+const result = reverseWords("Hello World");
+console.log(result, "result");
