@@ -907,3 +907,4 @@
 // Primer: "babad" → "bab" ili "aba"
 function longestPalindrome(str) {}
 const result = longestPalindrome("racecarxyz");
+// WORKING ON SIDE PROJECT ABOUT MY PORTFOLIO IN WEBFLOW
