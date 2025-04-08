@@ -906,4 +906,4 @@
 // Pronađi najduži palindrom u datom stringu
 // Primer: "babad" → "bab" ili "aba"
 function longestPalindrome(str) {}
-const result = longestPalindrome();
+const result = longestPalindrome("racecarxyz");
