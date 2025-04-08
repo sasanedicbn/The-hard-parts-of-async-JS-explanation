@@ -909,3 +909,8 @@
 // Primjer:
 // Ulaz: nums = [1,2,3,4,5,6,7], k = 3
 // Izlaz: [5,6,7,1,2,3,4]
+
+function rotateArr() {}
+
+const result = rotateArr();
+console.log("result", result);
