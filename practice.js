@@ -903,8 +903,3 @@
 // const result = reverseWords("Hello World");
 // console.log(result, "result");
 // Broj 28
-// Pronađi najduži palindrom u datom stringu
-// Primer: "babad" → "bab" ili "aba"
-function longestPalindrome(str) {}
-const result = longestPalindrome("racecarxyz");
-// WORKING ON SIDE PROJECT ABOUT MY PORTFOLIO IN WEBFLOW
