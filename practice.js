@@ -903,3 +903,9 @@
 // const result = reverseWords("Hello World");
 // console.log(result, "result");
 // Broj 28
+// Rotate Array
+// Zadatak:
+// Rotirajte niz udesno za k koraka.
+// Primjer:
+// Ulaz: nums = [1,2,3,4,5,6,7], k = 3
+// Izlaz: [5,6,7,1,2,3,4]
