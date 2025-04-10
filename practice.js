@@ -915,7 +915,7 @@
 // const result = rotateArr();
 // console.log("result", result);
 
-// Broj 29
+Broj 29
 
 function findBiggestNumber(numbers) {
   let biggestNum = 0;
@@ -928,6 +928,7 @@ function findBiggestNumber(numbers) {
       biggestNum;
     }
   }
+  return biggestNum;
 }
 
 const result = findBiggestNumber([5, 10]);
