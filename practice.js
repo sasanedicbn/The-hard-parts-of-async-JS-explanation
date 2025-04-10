@@ -915,4 +915,11 @@
 // const result = rotateArr();
 // console.log("result", result);
 
-// learn about figma and create design for my portofilo project
+// Broj 29
+
+4;
+function findBiggestNumber(numbers) {}
+
+const result = findBiggestNumber([5, 10]);
+
+console.log(result);
