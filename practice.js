@@ -914,3 +914,5 @@
 
 // const result = rotateArr();
 // console.log("result", result);
+
+// learn about figma and create design for my portofilo project
