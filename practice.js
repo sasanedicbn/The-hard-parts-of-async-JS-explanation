@@ -917,8 +917,18 @@
 
 // Broj 29
 
-4;
-function findBiggestNumber(numbers) {}
+function findBiggestNumber(numbers) {
+  let biggestNum = 0;
+  for (let i = 0; i <= numbers.length - 1; i++) {
+    if (biggestNum < numbers[i]) {
+      console.log(numbers[i]);
+      biggestNum = +numbers[i];
+      console.log(biggestNum, "bignum");
+    } else {
+      biggestNum;
+    }
+  }
+}
 
 const result = findBiggestNumber([5, 10]);
 
