@@ -921,9 +921,7 @@ function findBiggestNumber(numbers) {
   let biggestNum = 0;
   for (let i = 0; i <= numbers.length - 1; i++) {
     if (biggestNum < numbers[i]) {
-      console.log(numbers[i]);
       biggestNum = +numbers[i];
-      console.log(biggestNum, "bignum");
     } else {
       biggestNum;
     }
