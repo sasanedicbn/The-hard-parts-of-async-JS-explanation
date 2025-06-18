@@ -926,4 +926,11 @@
 //       biggestNum;
 //     }
 //   }
-//   return
+//   return biggestNum;
+// }
+
+// const result = findBiggestNumber([5, 10]);
+
+// console.log(result);
+
+// Broj 30
