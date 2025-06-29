@@ -915,16 +915,22 @@
 // const result = rotateArr();
 // console.log("result", result);
 
-Broj 29
+// Broj 29
 
-function findBiggestNumber(numbers) {
-  let biggestNum = 0;
-  for (let i = 0; i <= numbers.length - 1; i++) {
-    if (biggestNum < numbers[i]) {
-      biggestNum = +numbers[i];
-    } else {
-      biggestNum;
-    }
-  }
-  return biggestNum;
-}
+// function findBiggestNumber(numbers) {
+//   let biggestNum = 0;
+//   for (let i = 0; i <= numbers.length - 1; i++) {
+//     if (biggestNum < numbers[i]) {
+//       biggestNum = +numbers[i];
+//     } else {
+//       biggestNum;
+//     }
+//   }
+//   return biggestNum;
+// }
+
+// const result = findBiggestNumber([5, 10]);
+
+// console.log(result);
+
+// Broj 30
