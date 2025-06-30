@@ -924,10 +924,12 @@
 // Pretvori prvo slovo svake riječi u veliko
 // Napiši funkciju koja prima string (npr. "hello world") i vraća novi string gdje je prvo slovo
 //  svake riječi veliko (npr. "Hello World").
-function firstLetter(string) {
-  const letter = string
-    .split(" ")
-    .map((word) => word[0].toUpperCase() + word.slice(1))
-    .join(" ");
-  return letter;
-}
+// function firstLetter(string) {
+//   const letter = string
+//     .split(" ")
+//     .map((word) => word[0].toUpperCase() + word.slice(1))
+//     .join(" ");
+//   return letter;
+// }
+// const result = firstLetter("danas je divan dan");
+// console.log(result, "result");
