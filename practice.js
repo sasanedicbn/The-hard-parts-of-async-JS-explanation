@@ -952,37 +952,3 @@
 // };
 // const res = findBiggestNum([1, 2, 3, 10, 12, 15, 20]);
 // console.log("biggest num in array", res);
-
-const reverseArray = (arr) => {};
-
-const reversedArr = reverseArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
-// function findBiggestNumber(numbers) {
-//   let biggestNum = 0;
-//   for (let i = 0; i <= numbers.length - 1; i++) {
-//     if (biggestNum < numbers[i]) {
-//       console.log(numbers[i]);
-//       biggestNum = +numbers[i];
-//       console.log(biggestNum, "bignum");
-//     } else {
-//       biggestNum;
-//     }
-//   }
-//   return biggestNum;
-// }
-
-// const result = findBiggestNumber([5, 10]);
-
-// 6.
-// Napiši funkciju koja prima niz i koristi for petlju da stvori novi niz
-//  s elementima originalnog niza u obrnutom redoslijedu.
-
-// const reverseArrNumbers = (numbers) => {
-//   const reversedArr = [];
-//   for (let i = numbers.length - 1; i >= 0; i--) {
-//     reversedArr.push(numbers[i]);
-//   }
-//   return reversedArr;
-// };
-
-// const result = reverseArrNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
-// console.log(result);
