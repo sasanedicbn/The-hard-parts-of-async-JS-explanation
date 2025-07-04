@@ -933,3 +933,7 @@
 // }
 // const result = firstLetter("danas je divan dan");
 // console.log(result, "result");
+
+// Broj 20
+// Napiši funkciju koja prima string i vraća broj riječi u njemu.
+// Primjer: Za string "Danas je lijep dan", rezultat je 4.
