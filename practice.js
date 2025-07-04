@@ -933,22 +933,3 @@
 // }
 // const result = firstLetter("danas je divan dan");
 // console.log(result, "result");
-
-// biggest number in array
-
-// OL OL OL OL OL OL
-
-// const findBiggestNum = (arr) => {
-//   let bigestNum = 0;
-//   for (let i = 0; i <= arr.length - 1; i++) {
-//     // console.log(arr[i]);
-//     // if (bigestNum > arr[i]) {
-//     //   bigestNum = arr[i];
-//     // } else {
-//     //   bigestNum;
-//     // }
-//     return arr[i];
-//   }
-// };
-// const res = findBiggestNum([1, 2, 3, 10, 12, 15, 20]);
-// console.log("biggest num in array", res);
