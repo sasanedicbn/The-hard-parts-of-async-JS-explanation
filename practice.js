@@ -949,3 +949,13 @@
 // console.log(result, "result");
 
 // Napiši funkciju koja prima string i vraća najdužu riječ u tom stringu.
+function longestString(string) {
+  let longestWord = "";
+  const charachters = string.split(" ");
+  for (let i = 0; i < charachters.length; i++) {
+    if (charachters[i].length > longestWord.length) {
+      longestWord = charachters;
+    }
+  }
+  return longestWord;
+}
