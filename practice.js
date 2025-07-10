@@ -954,7 +954,7 @@ function longestString(string) {
   const charachters = string.split(" ");
   for (let i = 0; i < charachters.length; i++) {
     if (charachters[i].length > longestWord.length) {
-      longestWord = charachters;
+      longestWord = charachters[i];
     }
   }
   return longestWord;
