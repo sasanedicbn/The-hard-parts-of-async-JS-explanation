@@ -947,3 +947,5 @@
 // }
 // const result = countWords("danas je moj dan rodjendan");
 // console.log(result, "result");
+
+// Napiši funkciju koja prima string i vraća najdužu riječ u tom stringu.
