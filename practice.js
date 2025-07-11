@@ -981,6 +981,7 @@ function countWords(string) {
     .trim("")
     .split(" ")
     .filter((word) => word !== "").length;
+  return santaces;
 }
 const result = countWords("danas je moj dan rodjendan");
 console.log(result, "result");
