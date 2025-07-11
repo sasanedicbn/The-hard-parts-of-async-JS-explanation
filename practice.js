@@ -961,15 +961,15 @@
 // }
 
 // broji broj samoglasnika u stringu
-function findVowels(word) {
-  let samoglasnici = ["a", "e", "i", "o", "u"];
+// function findVowels(word) {
+//   let samoglasnici = ["a", "e", "i", "o", "u"];
 
-  let result = [];
-  let charachters = word.split("");
-  for (let i = 0; i < word.length; i++) {
-    if (samoglasnici.includes(charachters[i])) {
-      result.push(charachters[i]);
-    }
-  }
-  return result;
-}
+//   let result = [];
+//   let charachters = word.split("");
+//   for (let i = 0; i < word.length; i++) {
+//     if (samoglasnici.includes(charachters[i])) {
+//       result.push(charachters[i]);
+//     }
+//   }
+//   return result;
+// }
