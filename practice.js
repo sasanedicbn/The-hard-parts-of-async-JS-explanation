@@ -973,3 +973,5 @@
 //   }
 //   return result;
 // }
+// Napiši funkciju koja prima string i vraća broj riječi u njemu.
+// Primjer: Za string "Danas je lijep dan", rezultat je 4.
