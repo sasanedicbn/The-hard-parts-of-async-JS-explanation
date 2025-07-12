@@ -993,4 +993,9 @@
 function provjeraAnagrama(word1, word2) {
   const first = word1.split("").sort().join("");
   const second = word2.split("").sort().join("");
+  if (first !== second) {
+    return false;
+  } else {
+    return true;
+  }
 }
