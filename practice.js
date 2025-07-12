@@ -985,3 +985,8 @@
 // }
 // const result = countWords("danas je moj dan rodjendan");
 // console.log(result, "result");
+
+// Provjeri je li string anagram
+// Napiši funkciju koja prima dva stringa i provjerava jesu li oni anagrami
+// (sadrže iste znakove, ali u različitom redoslijedu).
+// Primjer: "listen" i "silent" su anagrami.
