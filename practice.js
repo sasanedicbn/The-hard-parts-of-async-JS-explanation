@@ -976,12 +976,12 @@
 // Napiši funkciju koja prima string i vraća broj riječi u njemu.
 // Primjer: Za string "Danas je lijep dan", rezultat je 4.
 
-function countWords(string) {
-  const santaces = string
-    .trim("")
-    .split(" ")
-    .filter((word) => word !== "").length;
-  return santaces;
-}
-const result = countWords("danas je moj dan rodjendan");
-console.log(result, "result");
+// function countWords(string) {
+//   const santaces = string
+//     .trim("")
+//     .split(" ")
+//     .filter((word) => word !== "").length;
+//   return santaces;
+// }
+// const result = countWords("danas je moj dan rodjendan");
+// console.log(result, "result");
