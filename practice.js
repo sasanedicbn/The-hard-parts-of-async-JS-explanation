@@ -999,3 +999,7 @@
 //     return true;
 //   }
 // }
+
+// Suma svih brojeva između dva broja
+// Napiši funkciju koja prima dva broja (početak i kraj) i vraća sumu svih brojeva između
+//  njih (uključujući i ta dva broja).
