@@ -990,12 +990,12 @@
 // Napiši funkciju koja prima dva stringa i provjerava jesu li oni anagrami
 // (sadrže iste znakove, ali u različitom redoslijedu).
 // Primjer: "listen" i "silent" su anagrami.
-function provjeraAnagrama(word1, word2) {
-  const first = word1.split("").sort().join("");
-  const second = word2.split("").sort().join("");
-  if (first !== second) {
-    return false;
-  } else {
-    return true;
-  }
-}
+// function provjeraAnagrama(word1, word2) {
+//   const first = word1.split("").sort().join("");
+//   const second = word2.split("").sort().join("");
+//   if (first !== second) {
+//     return false;
+//   } else {
+//     return true;
+//   }
+// }
