@@ -1012,4 +1012,6 @@
 //   }
 // }
 
-// check branch
+// Broj 27
+// Vrati rečenicu sa obrnutim redosledom reči
+// Primer: "Hello World" → "World Hello"
