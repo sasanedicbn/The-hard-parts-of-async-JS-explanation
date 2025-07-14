@@ -1021,3 +1021,14 @@
 
 // Provjera je li niz sortiran
 // Napiši funkciju koja prima niz brojeva i koristi for petlju da provjeri je li niz sortiran uzlazno.
+
+function sortedArr(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i + 1] > arr[i]) {
+      return true;
+    }
+    return false;
+  }
+}
+const index = sortedArr([1, 2, 3, 2, 5, 6, 7, 8, 9, 10]);
+console.log(index);
