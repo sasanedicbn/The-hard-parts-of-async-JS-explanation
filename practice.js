@@ -1012,10 +1012,12 @@
 //   }
 // }
 
-// Broj 27
 // Vrati rečenicu sa obrnutim redosledom reči
 // Primer: "Hello World" → "World Hello"
-function reverseWords(sentence) {
-  const word = sentence.split(" ").reverse().join(" ");
-  return word;
-}
+// function reverseWords(sentence) {
+//   const word = sentence.split(" ").reverse().join(" ");
+//   return word;
+// }
+
+// Provjera je li niz sortiran
+// Napiši funkciju koja prima niz brojeva i koristi for petlju da provjeri je li niz sortiran uzlazno.
