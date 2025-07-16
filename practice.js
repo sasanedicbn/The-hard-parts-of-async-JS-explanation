@@ -1032,3 +1032,8 @@
 // }
 // const index = sortedArr([1, 2, 3, 2, 5, 6, 7, 8, 9, 10]);
 // console.log(index);
+
+// Suma svih brojeva između dva broja
+// Napiši funkciju koja prima dva broja (početak i kraj) i vraća sumu svih brojeva između
+//  njih (uključujući i ta dva broja).
+// Primjer: Za 1 i 4, rezultat je 10 (1 + 2 + 3 + 4).
