@@ -1041,5 +1041,6 @@ function calclucateBetweenNumbers(startingNum, endingNum) {
   let result = 0;
   for (let i = startingNum; i < endingNum + 1; i++) {
     result += i;
+    return result;
   }
 }
