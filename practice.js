@@ -1037,10 +1037,10 @@
 // Napiši funkciju koja prima dva broja (početak i kraj) i vraća sumu svih brojeva između
 //  njih (uključujući i ta dva broja).
 // // Primjer: Za 1 i 4, rezultat je 10 (1 + 2 + 3 + 4).
-// function calclucateBetweenNumbers(startingNum, endingNum) {
-//   let result = 0;
-//   for (let i = startingNum; i < endingNum + 1; i++) {
-//     result += i;
-//     return result;
-//   }
-// }
+function calclucateBetweenNumbers(startingNum, endingNum) {
+  let result = 0;
+  for (let i = startingNum; i < endingNum + 1) {
+    result += i;
+    return result;
+  }
+}
